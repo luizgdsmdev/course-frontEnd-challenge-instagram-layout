@@ -135,12 +135,117 @@ body{
     color: #ffffff;
 }
 
-
-.login__signin, .login__signin a{
-    color: white;
+.login__signin a{
+    color: rgba(0, 149, 246, 1);
 }
 
 .login__signin{
     margin-top: 2rem;
 }
 
+.content__login-carrossel-wrapper{
+    width: 39rem;
+    height: 31rem;
+    max-width: 630px;
+    max-height: 500px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Lateral form carrossel */ 
+.content__login-img-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.carrossel_img-1{
+    background-image: url("../images/img-1.png");
+    transition: 1s ease-in-out;
+    max-width: 570px;
+    z-index: -1;
+}
+
+.carrossel_img-2{
+    background-image: url("../images/img-2.png");
+    transition: 1s ease-in-out;
+    max-width: 570px;
+    z-index: -2;
+}
+
+.carrossel_img-3{
+    background-image: url("../images/img-3.png");
+    transition: 1s ease-in-out;
+    max-width: 570px;
+    z-index: -3;
+}
+
+.carrossel_img-4{
+    background-image: url("../images/img-4.png");
+    transition: 1s ease-in-out;
+    max-width: 570px;
+    z-index: -4;
+}
+
+.carrossel_img-move-back{
+    animation: goLeft 4s ease-in-out forwards;
+    opacity: 1;
+}
+ 
+.carrossel_img-move-front{
+    animation: goRight 3s ease-in-out 3s forwards;
+    opacity: 1;
+}
+
+@keyframes goLeft {
+    0%{
+        opacity: 1;
+        z-index: 9;
+    }
+    90%{
+        transform: translateX(-25rem);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 0;
+        z-index: -9;
+    }
+    
+}
+
+@keyframes goRight {
+    0%{
+        opacity: 0;
+    }
+    60%{
+        transform: translateX(5rem);
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+        z-index: 3;
+    }
+    
+}
+
+.content__login-img-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 1s ease-in-out;
+}
+
+.content__login-img-wrapper.active {
+  animation: goRight 3s ease-in-out forwards;
+}
+
+.carrossel_img-move-back {
+  animation: goLeft 4s ease-in-out forwards;
+}
