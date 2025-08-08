@@ -2,7 +2,7 @@
 
 Course project based on the Instagram login page, built with JavaScript, HTML, and CSS. This challenge focuses on creating a responsive and interactive webpage that mirrors the design and functionality of the HBO platform.
 
-*live link*: https://luizgdsmdev.github.io/course-frontEnd-challenge-instagram/
+*live link*: https://luizgdsmdev.github.io/course-frontEnd-challenge-instagram-layout/
 
 ## Project Description 
 
@@ -25,4 +25,4 @@ This repository contains the solution for a coding challenge was based on the In
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/luizgdsmdev/course-frontEnd-challenge-instagram
+   git clone https://github.com/luizgdsmdev/course-frontEnd-challenge-instagram-layout
