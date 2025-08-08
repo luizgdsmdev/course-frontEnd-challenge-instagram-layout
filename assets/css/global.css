@@ -24,6 +24,10 @@ body{
     overflow-x: hidden;
 }
 
+#form-title{
+    font-size: 1.7rem;
+}
+
 .content__login{
     display: flex;
     flex-flow: row nowrap;
@@ -161,41 +165,46 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
-    
+    border-radius: 1.5rem;
 }
 
 .carrossel_img-1{
-    background-image: url("../images/img-1.png");
+    background-image: url("../images/cat-1.jpg");
     transition: 1s ease-in-out;
-    max-width: 370px;
+    max-width: 210px;
     z-index: -1;
     justify-self: anchor-center;
+    transform: rotate(6deg);
+    border-radius: 2.3rem;
 }
 
 .carrossel_img-2{
-    background-image: url("../images/img-2.png");
+    background-image: url("../images/cat-2.jpg");
     transition: 1s ease-in-out;
-    max-width: 370px;
+    max-width: 210px;
     z-index: -2;
     justify-self: anchor-center;
+    transform: rotate(-12deg);
 }
 
 .carrossel_img-3{
-    background-image: url("../images/img-3.png");
+    background-image: url("../images/cat-3.jpg");
     transition: 1s ease-in-out;
-    max-width: 370px;
+    max-width: 210px;
     z-index: -3;
     justify-self: anchor-center;
 }
 
 .carrossel_img-4{
-    background-image: url("../images/img-4.png");
+    background-image: url("../images/cat-4.jpg");
     transition: 1s ease-in-out;
-    max-width: 370px;
+    max-width: 210px;
     z-index: -4;
     justify-self: anchor-center;
+    transform: rotate(12deg);
 }
 
 .carrossel_img-move-back{
