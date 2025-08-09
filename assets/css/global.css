@@ -177,6 +177,7 @@ body{
     max-width: 210px;
     z-index: -1;
     justify-self: anchor-center;
+    transition: 1s ease-in-out;
     transform: rotate(6deg);
     border-radius: 2.3rem;
 }
@@ -187,6 +188,7 @@ body{
     max-width: 210px;
     z-index: -2;
     justify-self: anchor-center;
+    transition: 1s ease-in-out;
     transform: rotate(-12deg);
 }
 
@@ -196,6 +198,7 @@ body{
     max-width: 210px;
     z-index: -3;
     justify-self: anchor-center;
+    transition: 1s ease-in-out;
 }
 
 .carrossel_img-4{
@@ -204,23 +207,27 @@ body{
     max-width: 210px;
     z-index: -4;
     justify-self: anchor-center;
+    transition: 1s ease-in-out;
     transform: rotate(12deg);
 }
 
 .carrossel_img-move-back{
     animation: goLeft 4s ease-in-out forwards;
     opacity: 1;
+    transition: transform 2s ease-in-out;
 }
  
 .carrossel_img-move-front{
     animation: goRight 3s ease-in-out 3s forwards;
     opacity: 1;
+    transition: transform 2s ease-in-out;
 }
 
 @keyframes goLeft {
     0%{
         opacity: 1;
         z-index: 9;
+        transition: 2s ease-in-out;
     }
     90%{
         transform: translateX(-15rem);
@@ -237,6 +244,7 @@ body{
 @keyframes goRight {
     0%{
         opacity: 0;
+        transition: 2s ease-in-out;
     }
     60%{
         transform: translateX(5rem);
